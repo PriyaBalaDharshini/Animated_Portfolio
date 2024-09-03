@@ -1,11 +1,14 @@
 import React from 'react'
 import "./app.scss"
+import Navbar from './components/navbar/Navbar'
 
 
 function App() {
   return (
     <>
-      <section>Home</section>
+      <section>
+        <Navbar />
+      </section>
       <section>Skills</section>
       <section>Project 1</section>
       <section>Project 2</section>
