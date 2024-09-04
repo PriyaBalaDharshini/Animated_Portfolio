@@ -2,6 +2,7 @@ import React from 'react'
 import "./app.scss"
 import Navbar from './components/navbar/Navbar'
 import Home from './components/home/Home'
+import AboutMe from './components/aboutMe/AboutMe'
 
 
 function App() {
@@ -11,7 +12,10 @@ function App() {
         <Navbar />
         <Home />
       </section>
-      <section id='Education'>Education</section>
+      <section id='About'>
+        <AboutMe />
+      </section>
+
       <section id='Skills'>Skills</section>
       <section>Project 1</section>
       <section>Project 2</section>

@@ -30,7 +30,7 @@ function Links() {
 
     const items = [
         "Home",
-        "Education",
+        "About",
         "Skills",
         "Projects",
         "Experience",

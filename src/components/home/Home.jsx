@@ -37,6 +37,21 @@ const sliderVarients = {
     }
 };
 
+const photoVarient = {
+    initial: {
+        x: 500,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1
+        }
+    },
+}
+
 function Home() {
     return (
         <div className="home">
@@ -55,9 +70,9 @@ function Home() {
             <motion.div className="slidingTextContainer" variants={sliderVarients} initial="initial" animate="animate" >
                 Full Stack Developer
             </motion.div>
-            <div className="imageContainer">
+            <motion.div className="imageContainer" variants={photoVarient} initial="initial" animate="animate" >
                 <img src="./1.jpg" alt="" />
-            </div>
+            </motion.div>
         </div>
     );
 }

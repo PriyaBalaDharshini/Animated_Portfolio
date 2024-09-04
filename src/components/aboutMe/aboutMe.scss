@@ -1,0 +1,119 @@
+.about {
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    padding: 30px;
+
+    img {
+        width: 200px;
+        height: 220px;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid white;
+        padding: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        height: 100%;
+
+        .details {
+            width: 60%;
+            padding: 30px;
+
+            p {
+                margin: 0;
+                font-size: 40px;
+                letter-spacing: 10px;
+            }
+
+            div {
+                margin-top: 20px;
+                line-height: 45px;
+                font-size: 20px;
+            }
+
+            button {
+                margin-top: 30px;
+                /* Space above the button */
+                align-self: center;
+                /* Center the button horizontally */
+            }
+
+
+        }
+
+        .education {
+            width: 35%;
+            padding: 20px;
+
+            .education-title {
+                font-size: 40px;
+                letter-spacing: 10px;
+                margin: 0;
+
+            }
+
+            .timeline {
+
+                position: relative;
+                padding: 20px 0;
+                margin-top: 10px;
+
+                align-items: center;
+                /* Center the timeline vertically */
+
+                .timeline-item {
+                    font-size: 20px;
+                    position: relative;
+                    margin-bottom: 25px;
+
+
+                    .timeline-content {
+                        position: relative;
+                        padding: 20px 25px;
+                        border-radius: 5px;
+                        background-color: #333;
+                        line-height: 40px;
+                        color: white;
+                        text-align: center;
+                    }
+
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: -8px;
+                        top: -6px;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    button {
+        padding: 12px 20px;
+        border-radius: 10px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        font-weight: 300;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    button:hover {
+        background-color: white;
+        color: #111132;
+
+
+    }
+}
