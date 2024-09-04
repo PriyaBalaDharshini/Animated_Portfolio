@@ -6,7 +6,7 @@ function Navbar() {
         <div className="navbar">
             <Sidebar />
             <div className="wrapper">
-                <span>PRIYADHARSHINI T.</span>
+                <span>Priya's Vault</span>
                 <div className="social">
                     <a href="">
                         <img src="/github.png" alt="" />

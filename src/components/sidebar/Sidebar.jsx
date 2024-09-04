@@ -1,10 +1,10 @@
-import './sidebar.scss'
-import Links from './links/Links'
-import ToggleButton from './toggleButton/ToggleButton'
-import { useState } from 'react'
-import { delay, motion } from 'framer-motion'
+import './sidebar.scss';
+import Links from './links/Links';
+import ToggleButton from './toggleButton/ToggleButton';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 
-const varients = {
+const variants = {
     open: {
         clipPath: "circle(1200px at 50px 50px)",
         transition: {
@@ -21,19 +21,19 @@ const varients = {
             damping: 40
         }
     }
-}
+};
 
 function Sidebar() {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
 
     return (
         <motion.div className="sidebar" animate={open ? "open" : "closed"}>
-            <motion.div className="bg" variants={varients}>
+            <motion.div className="bg" variants={variants}>
                 <Links />
             </motion.div>
             <ToggleButton setOpen={setOpen} />
         </motion.div>
-    )
+    );
 }
 
-export default Sidebar
+export default Sidebar;
