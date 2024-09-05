@@ -1,5 +1,5 @@
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
 }
 
@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: #0c0c1d;
-    color: white;
+    color: lightgray;
 }
 
 a {
@@ -24,4 +24,7 @@ section {
     height: 100vh;
     width: 100vw;
     scroll-snap-align: center;
+    overflow: hidden;
+    scroll-padding-top: 20px;
+    scroll-padding-bottom: 20px;
 }

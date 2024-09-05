@@ -8,36 +8,41 @@
         max-width: 1366px;
         margin: auto;
         height: 100%;
+        display: flex;
+        align-items: center; // Vertically centers the items
+        justify-content: space-between; // Even space between text and image containers
+        padding: 0 50px; // Add some padding to avoid touching screen edges
 
         .textContainer {
-            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 30px;
-            width: 50%;
+            flex: 1; // Take up equal space as the image container
+            max-width: 50%; // Ensure the text doesn't exceed half the screen width
 
             h2 {
                 font-size: 30px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
-                font-weight: 900
+                font-weight: 900;
             }
 
             h1 {
                 font-size: 68px;
                 color: lightgray;
-
             }
 
             .buttons {
+                display: flex;
+                gap: 25px;
+
                 button {
                     padding: 12px 20px;
                     border-radius: 10px;
                     border: 1px solid white;
                     background-color: transparent;
                     color: white;
-                    margin-right: 25px;
                     cursor: pointer;
                     font-weight: 300;
                 }
@@ -46,7 +51,21 @@
             img {
                 height: 40px;
                 width: 40px;
+            }
+        }
 
+        .imageContainer {
+            display: flex;
+            justify-content: center;
+            flex: 1; // Take up equal space as the text container
+            max-width: 50%; // Ensure the image doesn't exceed half the screen width
+
+            img {
+                height: 640px;
+                width: 460px;
+                border-radius: 100px;
+                border: 2px solid #7a7abf;
+                padding: 15px;
             }
         }
     }
@@ -58,25 +77,7 @@
         color: lightgray;
         white-space: nowrap;
         color: #ffffff09;
-        width: 50%;
         font-weight: bold;
-    }
-
-
-    .imageContainer {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-right: 180px;
-
-
-        img {
-            height: 640px;
-            width: 460px;
-            border-radius: 100px;
-            border: 2px solid #7a7abf;
-            padding: 15px;
-        }
+        width: 100%; // Make sure it covers the full width
     }
 }

@@ -63,9 +63,9 @@ function AboutMe() {
                         <motion.div className="timeline-item" variants={item}>
                             <div className="timeline-content">
                                 <p>B.Tech in Chemical Engineering</p>
+                                <p>Adhiyamaan College of Engineering, Hosur</p>
+                                <p>GPA: 80</p>
                                 <p>2017</p>
-                                <p>College Name: [Your College Name]</p>
-                                <p>GPA: [Your GPA]</p>
                             </div>
                         </motion.div>
                         <motion.div className="timeline-item" variants={item}>

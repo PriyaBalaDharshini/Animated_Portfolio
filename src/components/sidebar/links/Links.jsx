@@ -32,6 +32,7 @@ function Links() {
         "Home",
         "About",
         "Skills",
+        "SkillList",
         "Projects",
         "Experience",
         "Contact"

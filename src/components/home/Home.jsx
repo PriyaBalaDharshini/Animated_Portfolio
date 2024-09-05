@@ -50,7 +50,7 @@ const photoVarient = {
             staggerChildren: 0.1
         }
     },
-}
+};
 
 function Home() {
     return (
@@ -66,12 +66,12 @@ function Home() {
                     </motion.div>
                     <motion.img variants={textVariants} animate='scrollButton' src="./scroll.png" alt="" />
                 </motion.div>
+                <motion.div className="imageContainer" variants={photoVarient} initial="initial" animate="animate">
+                    <img src="./1.jpg" alt="" />
+                </motion.div>
             </div>
-            <motion.div className="slidingTextContainer" variants={sliderVarients} initial="initial" animate="animate" >
+            <motion.div className="slidingTextContainer" variants={sliderVarients} initial="initial" animate="animate">
                 Full Stack Developer
-            </motion.div>
-            <motion.div className="imageContainer" variants={photoVarient} initial="initial" animate="animate" >
-                <img src="./1.jpg" alt="" />
             </motion.div>
         </div>
     );

@@ -3,6 +3,9 @@ import "./app.scss"
 import Navbar from './components/navbar/Navbar'
 import Home from './components/home/Home'
 import AboutMe from './components/aboutMe/AboutMe'
+import Skills from './components/skills/Skills'
+import SkillList from './components/skillList/SkillList'
+import Projects from './components/projects/Projects'
 
 
 function App() {
@@ -12,16 +15,18 @@ function App() {
         <Navbar />
         <Home />
       </section>
-      <section id='About'>
+      {/* <section id='About'>
         <AboutMe />
-      </section>
+      </section> */}
 
-      <section id='Skills'>Skills</section>
-      <section>Project 1</section>
-      <section>Project 2</section>
-      <section>Project 3</section>
-      <section>Project 4</section>
-      <section id='Experience'>Experience</section>
+      <section id='Skills'>
+        <Skills />
+      </section>
+      {/* <section id='SkillList'>
+        <SkillList />
+      </section> */}
+      <Projects />
+
       <section id='Contact'>Contact</section>
     </>
   )
