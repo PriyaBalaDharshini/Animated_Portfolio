@@ -1,6 +1,7 @@
 .about {
     background: linear-gradient(180deg, #0c0c1d, #111132);
-    padding-top: 30px;
+    width: 100vw;
+    padding-top: 40px;
 
     img {
         width: 200px;
@@ -19,10 +20,12 @@
         gap: 30px;
         justify-content: center;
         height: 100%;
+        padding: 40px;
 
         .details {
-            width: 60%;
-            padding: 30px;
+            flex: 7;
+            padding: 20px;
+
 
             p {
                 margin: 0;
@@ -47,8 +50,9 @@
         }
 
         .education {
-            width: 40%;
+            flex: 4;
             padding: 20px;
+
 
             .education-title {
                 font-size: 40px;

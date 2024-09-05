@@ -6,6 +6,7 @@ import AboutMe from './components/aboutMe/AboutMe'
 import Skills from './components/skills/Skills'
 import SkillList from './components/skillList/SkillList'
 import Projects from './components/projects/Projects'
+import Contact from './components/sidebar/contact/Contact'
 
 
 function App() {
@@ -15,19 +16,27 @@ function App() {
         <Navbar />
         <Home />
       </section>
-      {/* <section id='About'>
+      <section id='About'>
         <AboutMe />
-      </section> */}
+      </section>
 
       <section id='Skills'>
         <Skills />
       </section>
+      <section>
+        <SkillList />
+      </section>
       {/* <section id='SkillList'>
         <SkillList />
       </section> */}
+
       <Projects />
 
-      <section id='Contact'>Contact</section>
+
+
+      <section id='Contact'>
+        <Contact />
+      </section>
     </>
   )
 }

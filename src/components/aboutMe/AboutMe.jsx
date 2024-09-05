@@ -31,9 +31,7 @@ function AboutMe() {
                 animate="visible"
             />
             <div className="wrapper">
-                <div className="mountains"></div>
-                <div className="stars"></div>
-                <div className="sun"></div>
+
                 <motion.div
                     className="details"
                     variants={container}
@@ -62,16 +60,16 @@ function AboutMe() {
                     <div className="timeline">
                         <motion.div className="timeline-item" variants={item}>
                             <div className="timeline-content">
-                                <p>B.Tech in Chemical Engineering</p>
+                                <p>B.Tech Chemical Engineering, 2017</p>
                                 <p>Adhiyamaan College of Engineering, Hosur</p>
-                                <p>GPA: 80</p>
-                                <p>2017</p>
+
+
                             </div>
                         </motion.div>
                         <motion.div className="timeline-item" variants={item}>
                             <div className="timeline-content">
-                                <p>Full Stack Development Certification</p>
-                                <p>2024</p>
+                                <p>Full Stack Development Certification, 2014</p>
+                                <p>GUVI GEEK EDTECH, Chennai</p>
                             </div>
                         </motion.div>
                     </div>
