@@ -1,41 +1,79 @@
+@import "../../app.scss";
+
 .home {
     height: calc(100vh - 100px);
     background: linear-gradient(180deg, #0c0c1d, #111132);
     overflow: hidden;
     position: relative;
 
+    @include mobile {
+        height: auto;
+        padding: 20px 0px;
+    }
+
     .wrapper {
         max-width: 1366px;
         margin: auto;
         height: 100%;
         display: flex;
-        align-items: center; // Vertically centers the items
-        justify-content: space-between; // Even space between text and image containers
-        padding: 0 50px; // Add some padding to avoid touching screen edges
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 0px 20px;
+        }
+
+
 
         .textContainer {
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 30px;
-            flex: 1; // Take up equal space as the image container
-            max-width: 50%; // Ensure the text doesn't exceed half the screen width
+            flex: 1;
+            max-width: 50%;
+
+            @include mobile {
+                max-width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+
 
             h2 {
                 font-size: 50px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
                 font-weight: 900;
+
+
+                @include mobile {
+                    font-size: 25px;
+                    letter-spacing: 5px;
+
+                }
             }
 
             h1 {
                 font-size: 68px;
                 color: lightgray;
+
+                @include mobile {
+                    font-size: 42px;
+                    letter-spacing: 6px;
+                }
             }
 
             .buttons {
                 display: flex;
                 gap: 25px;
+
+                @include mobile {
+                    flex-direction: column; // Stack buttons vertically on mobile
+                    gap: 20px; // Reduce gap between buttons
+                }
 
                 button {
                     padding: 12px 20px;
@@ -45,20 +83,34 @@
                     color: white;
                     cursor: pointer;
                     font-weight: 300;
+
+                    @include mobile {
+                        padding: 10px 15px;
+                        font-size: 12px;
+                    }
                 }
             }
 
             img {
                 height: 40px;
                 width: 40px;
+
+                @include mobile {
+                    display: none;
+                }
             }
         }
 
         .imageContainer {
             display: flex;
             justify-content: center;
-            flex: 1; // Take up equal space as the text container
-            max-width: 50%; // Ensure the image doesn't exceed half the screen width
+            flex: 1;
+            max-width: 50%;
+
+            @include mobile {
+                max-width: 100%; // Image takes full width on mobile
+                margin-top: 30px; // Add margin for spacing
+            }
 
             img {
                 height: 640px;
@@ -66,6 +118,13 @@
                 border-radius: 100px;
                 border: 2px solid #7a7abf;
                 padding: 15px;
+
+                @include mobile {
+                    height: 200px;
+                    width: 155px;
+                    border-radius: 10px;
+                    padding: 5px;
+                }
             }
         }
     }
@@ -79,5 +138,10 @@
         color: #ffffff09;
         font-weight: bold;
         width: 100%; // Make sure it covers the full width
+
+        @include mobile {
+            font-size: 20vh;
+            top: 20px;
+        }
     }
 }

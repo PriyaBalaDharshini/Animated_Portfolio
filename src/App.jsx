@@ -6,7 +6,7 @@ import AboutMe from './components/aboutMe/AboutMe'
 import Skills from './components/skills/Skills'
 import SkillList from './components/skillList/SkillList'
 import Projects from './components/projects/Projects'
-import Contact from './components/sidebar/contact/Contact'
+import Contact from './components/contact/Contact'
 import Cursor from './components/cursor/Cursor'
 
 
@@ -16,9 +16,9 @@ function App() {
       {/*  <Cursor /> */}
       <section id='Home'>
         <Navbar />
-        {/*  <Home /> */}
+        <Home />
       </section>
-      {/* 
+
       <section id='About'>
         <AboutMe />
       </section>
@@ -36,7 +36,7 @@ function App() {
       <section id='Contact'>
         <Contact />
       </section>
- */}
+
 
     </div>
   )
