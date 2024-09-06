@@ -1,7 +1,13 @@
+@import "../../app.scss";
+
 .about {
     background: linear-gradient(180deg, #0c0c1d, #111132);
     width: 100vw;
     padding-top: 40px;
+
+    @include mobile {
+        padding: 0;
+    }
 
     img {
         width: 200px;
@@ -12,6 +18,11 @@
         padding: 5px;
         display: block;
         margin: 0 auto;
+
+        @include mobile {
+            display: none;
+        }
+
     }
 
     .wrapper {
@@ -19,31 +30,60 @@
         flex-direction: row;
         gap: 30px;
         justify-content: center;
-        height: 100%;
+        height: auto;
         padding: 40px;
+
+        @include mobile {
+            padding: 0;
+            flex-direction: column;
+            gap: 10px;
+        }
 
         .details {
             flex: 7;
             padding: 20px;
+
+            @include mobile {
+                padding: 10px;
+                text-align: center;
+            }
 
 
             p {
                 margin: 0;
                 font-size: 40px;
                 letter-spacing: 10px;
+
+                @include mobile {
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                    text-decoration: underline;
+                    text-align: center;
+                }
             }
 
             div {
                 margin-top: 20px;
                 line-height: 45px;
                 font-size: 20px;
+
+                @include mobile {
+                    line-height: 20px;
+                    font-size: 14px;
+                }
             }
 
             button {
                 margin-top: 30px;
-                /* Space above the button */
                 align-self: center;
-                /* Center the button horizontally */
+
+                @include mobile {
+                    margin-top: 15px;
+                    align-self: center;
+                    padding: 8px 15px;
+                    font-size: 12px;
+                }
+
             }
 
 
@@ -53,11 +93,23 @@
             flex: 4;
             padding: 20px;
 
+            @include mobile {
+                padding: 10px;
+                text-align: center
+            }
+
 
             .education-title {
                 font-size: 40px;
                 letter-spacing: 10px;
                 margin: 0;
+
+                @include mobile {
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                    text-decoration: underline;
+                    text-align: center;
+                }
 
             }
 
@@ -66,14 +118,23 @@
                 position: relative;
                 padding: 20px 0;
                 margin-top: 10px;
-
                 align-items: center;
-                /* Center the timeline vertically */
+
+                @include mobile {
+                    padding: 10px 0;
+                    margin-top: 5px;
+                }
+
 
                 .timeline-item {
                     font-size: 20px;
                     position: relative;
                     margin-bottom: 25px;
+
+                    @include mobile {
+                        font-size: 12px;
+                        margin-bottom: 15px;
+                    }
 
 
                     .timeline-content {
@@ -84,6 +145,10 @@
                         line-height: 40px;
                         color: white;
                         text-align: center;
+
+                        @include mobile {
+                            padding: 5px 10px;
+                        }
                     }
 
 
@@ -96,6 +161,10 @@
                         height: 12px;
                         border-radius: 50%;
                         background-color: white;
+
+                        @include mobile {
+                            display: none; // Remove the before element on mobile for simplicity
+                        }
                     }
                 }
             }
@@ -112,6 +181,13 @@
         font-weight: 300;
         margin-top: 20px;
         font-size: 20px;
+
+        @include mobile {
+            margin: 10px 0px;
+            align-self: center;
+            padding: 8px 15px;
+            font-size: 12px;
+        }
     }
 
     button:hover {
