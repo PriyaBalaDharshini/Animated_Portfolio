@@ -21,7 +21,6 @@ a {
 }
 
 section {
-    height: 100vh;
     width: 100vw;
     scroll-snap-align: center;
     overflow: hidden;
@@ -29,20 +28,22 @@ section {
     scroll-padding-bottom: 20px;
 }
 
+
+
 @mixin mobile {
-    @media(max-width:738px) {
+    @media(max-width: 738px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media(max-width:2014px) {
+    @media(max-width: 2014px) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media(max-width:1366px) {
+    @media(max-width: 1366px) {
         @content;
     }
 }

@@ -1,6 +1,15 @@
+@import "../../app.scss";
+
 .skillslist {
     background: linear-gradient(180deg, #2e225b, #0c0c1d);
     padding: 80px;
+    height: 100vh;
+
+    @include mobile {
+        background: linear-gradient(180deg, #0c0c1d, #111132);
+        padding: 25px;
+        height: auto;
+    }
 
     .wrapper {
         display: flex;
@@ -15,6 +24,11 @@
             justify-content: space-evenly;
             align-items: center;
             gap: 100px;
+
+            @include mobile {
+                gap: 40px;
+                width: 100%;
+            }
         }
 
         .item {
@@ -27,12 +41,22 @@
             img {
                 height: 120px;
                 width: 120px;
+
+                @include mobile {
+                    height: 50px;
+                    width: 50px
+                }
             }
 
             p {
                 font-size: 24px;
                 margin-bottom: 10px;
                 font-weight: bolder;
+
+                @include mobile {
+                    font-size: 10px;
+                    margin-bottom: 3px;
+                }
             }
         }
     }

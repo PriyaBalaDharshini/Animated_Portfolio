@@ -67,6 +67,7 @@ const textVariant4 = {
 const SkillList = () => {
   return (
     <div className="skillslist">
+
       <div className="wrapper">
         <motion.div className="list" variants={textVariant1} initial='initial' animate='animate'>
           <div className="item">
