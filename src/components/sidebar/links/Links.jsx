@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
 
-const varients = {
+const variants = {
     open: {
         transition: {
             staggerChildren: 0.1,
@@ -25,7 +25,6 @@ const itemVariants = {
     },
 };
 
-
 function Links() {
 
     const items = [
@@ -36,7 +35,7 @@ function Links() {
         "Contact"
     ]
     return (
-        <motion.div className='links' variants={varients}>
+        <motion.div className='links' variants={variants}>
             {items.map((item, index) => (
                 <motion.a
                     href={`#${item}`}

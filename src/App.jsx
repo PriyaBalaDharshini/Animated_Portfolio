@@ -13,12 +13,12 @@ import Cursor from './components/cursor/Cursor'
 function App() {
   return (
     <div>
-      <Cursor />
+      {/*  <Cursor /> */}
       <section id='Home'>
         <Navbar />
-        <Home />
+        {/*  <Home /> */}
       </section>
-
+      {/* 
       <section id='About'>
         <AboutMe />
       </section>
@@ -31,11 +31,12 @@ function App() {
         <SkillList />
       </section>
 
-      <Projects />
+      <Projects id='Projects' />
 
       <section id='Contact'>
         <Contact />
       </section>
+ */}
 
     </div>
   )

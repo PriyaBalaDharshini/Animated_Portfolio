@@ -28,3 +28,21 @@ section {
     scroll-padding-top: 20px;
     scroll-padding-bottom: 20px;
 }
+
+@mixin mobile {
+    @media(max-width:738px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(max-width:2014px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(max-width:1366px) {
+        @content;
+    }
+}

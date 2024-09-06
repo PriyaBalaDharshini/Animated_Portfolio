@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .sidebar {
     display: flex;
     align-items: center;
@@ -17,6 +19,12 @@
         border-radius: 5px;
         border: 1px solid rgba(255, 255, 255, 0.18);
 
+        @include mobile {
+            justify-content: flex-end;
+            width: 100px;
+        }
+
+
         .links {
             position: absolute;
             display: flex;
@@ -27,6 +35,10 @@
             justify-content: center;
             gap: 20px;
 
+            @include mobile {
+                justify-content: flex-start;
+                margin-top: 80px;
+            }
 
             a {
                 font-size: 18px;
@@ -36,12 +48,23 @@
                 padding: 9px 15px;
                 border-radius: 5px;
 
-
+                @include mobile {
+                    font-size: 12px;
+                    font-weight: bold;
+                    background-color: transparent; 
+                    padding: 0; 
+                    color: black 
+                }
 
                 &:hover {
                     background-color: #ccccf0;
                     transform: scale(1.05);
                     color: black;
+
+                    @include mobile {
+                        background-color: transparent; 
+                        transform: none; 
+                    }
 
                 }
             }
@@ -59,7 +82,7 @@
         background-color: transparent;
         border: none;
         margin-top: 5px;
-
         cursor: pointer;
+
     }
 }

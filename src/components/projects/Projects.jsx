@@ -7,25 +7,25 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
     {
         id: 1,
-        title: "Blood Donation Application",
+        title: "Project 1",
         image: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quo cumque, nulla iste labore sit odio quis omnis, fugit inventore tempore modi corporis adipisci nobis quia veritatis. Quibusdam, voluptatem quisquam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quo cumque, nulla iste labore sit odio quis omnis, fugit inventore tempore modi corporis adipisci nobis quia veritatis. Quibusdam, voluptatem quisquam?"
     },
     {
         id: 2,
-        title: "Chat Application",
+        title: "Project 2",
         image: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quo cumque, nulla iste labore sit odio quis omnis, fugit inventore tempore modi corporis adipisci nobis quia veritatis. Quibusdam, voluptatem quisquam?"
     },
     {
         id: 3,
-        title: "Doctor Appointment Application",
+        title: "Project 3",
         image: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quo cumque, nulla iste labore sit odio quis omnis, fugit inventore tempore modi corporis adipisci nobis quia veritatis. Quibusdam, voluptatem quisquam?"
     },
     {
         id: 4,
-        title: "E-commerce Website",
+        title: "Project 4",
         image: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quo cumque, nulla iste labore sit odio quis omnis, fugit inventore tempore modi corporis adipisci nobis quia veritatis. Quibusdam, voluptatem quisquam?"
     }
@@ -43,7 +43,7 @@ const Single = ({ item }) => {
 
 
     return (
-        <section >
+        <div className='project-container' >
             <div className="container">
                 <div className="wrapper">
                     <motion.div className="imageContainer" ref={ref}>
@@ -56,7 +56,7 @@ const Single = ({ item }) => {
                     </motion.div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 
@@ -76,14 +76,17 @@ function Projects() {
 
 
     return (
-        <div className="projects" ref={ref}>
+        <div className="projects" ref={ref} id='Projects'>
             <div className="progress">
                 <h1>Featured Works</h1>
                 <motion.div style={{ scaleX: scaleX }} className="progressBar"></motion.div>
             </div>
-            {items.map((item) => (
-                <Single item={item} key={item.id} />
-            ))}
+
+            <div className="projectsContainer">
+                {items.map((item) => (
+                    <Single item={item} key={item.id} />
+                ))}
+            </div>
         </div>
     )
 }
