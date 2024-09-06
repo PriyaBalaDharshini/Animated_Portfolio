@@ -1,5 +1,6 @@
 import './home.scss';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const textVariants = {
     initial: {
@@ -61,8 +62,12 @@ function Home() {
                     <motion.p variants={textVariants}>A Budding 👩‍💻</motion.p>
                     <motion.h1 variants={textVariants}>Certified <br /> Full Stack Developer</motion.h1>
                     <motion.div variants={textVariants} className="buttons">
-                        <motion.button variants={textVariants}>My Projects</motion.button>
-                        <motion.button variants={textVariants}>Contact Me</motion.button>
+                        <Link to="Projects" smooth={true} duration={500} offset={-50}>
+                            <motion.button variants={textVariants}>My Projects</motion.button>
+                        </Link>
+                        <Link to="Contact" smooth={true} duration={500} offset={-50}>
+                            <motion.button variants={textVariants}>Contact Me</motion.button>
+                        </Link>
                     </motion.div>
                     <motion.img variants={textVariants} animate='scrollButton' src="./scroll.png" alt="" />
                 </motion.div>

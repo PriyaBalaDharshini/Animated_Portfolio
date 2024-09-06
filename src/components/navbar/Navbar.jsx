@@ -8,10 +8,10 @@ function Navbar() {
             <div className="wrapper">
                 <span>Priya's Vault</span>
                 <div className="social">
-                    <a href="">
+                    <a href="https://github.com/PriyaBalaDharshini" target='_blank' >
                         <img src="/github.png" alt="" />
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/priyadharshini-thirunavukkarasu-b1b615b4/" target='_blank' >
                         <img src="/linkedin.png" alt="" />
                     </a>
                 </div>

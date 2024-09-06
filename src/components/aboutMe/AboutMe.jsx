@@ -46,7 +46,7 @@ function AboutMe() {
                         I am passionate about creating user-friendly and engaging digital experiences. With my background in technical editing and my new skills in full-stack development, I’m ready to take on roles as a Frontend Developer, Backend Developer, React Developer, or Full Stack Developer. I look forward to applying my skills and enthusiasm to new challenges and making a positive impact in the tech field.
                     </motion.div>
                     <motion.button className="button" variants={item}>
-                        Resume
+                        <a href="https://drive.google.com/file/d/1I_zslT3LQfZYu6rxrB85a-EGpsihj_-O/view" target='_blank'>Resume</a>
                     </motion.button>
                 </motion.div>
 
@@ -74,10 +74,10 @@ function AboutMe() {
                         </motion.div>
                     </div>
                     <motion.button
-                        onClick={() => window.open('https://drive.google.com/your-certification-link', '_blank')}
+
                         variants={item}
                     >
-                        View Certification
+                        <a href="https://drive.google.com/file/d/1kqCkl7fUTGmYJqft04L7T6mn0f9NKbnY/view" target='_blank'>Certification</a>
                     </motion.button>
                 </motion.div>
             </div>

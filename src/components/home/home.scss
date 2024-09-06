@@ -26,7 +26,6 @@
         }
 
 
-
         .textContainer {
             display: flex;
             flex-direction: column;
@@ -70,6 +69,7 @@
                 display: flex;
                 gap: 25px;
 
+
                 @include mobile {
                     flex-direction: column; // Stack buttons vertically on mobile
                     gap: 20px; // Reduce gap between buttons
@@ -83,6 +83,7 @@
                     color: white;
                     cursor: pointer;
                     font-weight: 300;
+                    cursor: pointer;
 
                     @include mobile {
                         padding: 10px 15px;
