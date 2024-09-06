@@ -4,7 +4,7 @@
     height: 100vh;
 
     @include mobile {
-        height: auto; // Use auto for mobile to handle varying content height
+        height: auto;
         padding: 0px 20px;
     }
 }
@@ -103,7 +103,7 @@
                     font-size: 18px;
 
                     @include mobile {
-                        font-size: 14px;
+                        display: none;
                     }
                 }
 
