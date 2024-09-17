@@ -83,7 +83,6 @@ const SkillList = () => {
           <div className="item">
             <p>Bootstrap</p>
             <img src="./bootstrap.png" alt="" />
-
           </div>
 
         </motion.div>

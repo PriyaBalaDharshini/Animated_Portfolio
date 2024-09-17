@@ -3,7 +3,7 @@
 .skillslist {
     background: linear-gradient(180deg, #2e225b, #0c0c1d);
     padding: 80px;
-    height: 100vh;
+    height: auto;
 
     @include mobile {
         background: linear-gradient(180deg, #0c0c1d, #111132);
@@ -34,17 +34,19 @@
         .item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
 
 
             img {
                 height: 120px;
                 width: 120px;
+                object-fit: cover;
 
                 @include mobile {
                     height: 50px;
-                    width: 50px
+                    width: 50px;
+                    object-fit: cover;
                 }
             }
 
