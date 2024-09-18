@@ -1,6 +1,6 @@
 import './home.scss';
 import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const textVariants = {
     initial: {
@@ -64,10 +64,10 @@ function Home() {
                     <motion.h1 variants={textVariants}>Certified  Full Stack Developer</motion.h1>
                     <motion.h2 variants={textVariants}>MERN Stack</motion.h2>
                     <motion.div variants={textVariants} className="buttons">
-                        <Link to="/projects" className="link">
+                        <Link to="/projects" smooth={true} duration={500} offset={-50}>
                             <motion.button variants={textVariants}>My Projects</motion.button>
                         </Link>
-                        <Link to="/contact" className="link">
+                        <Link to="/contact" smooth={true} duration={500} offset={-50}>
                             <motion.button variants={textVariants}>Contact Me</motion.button>
                         </Link>
                     </motion.div>
