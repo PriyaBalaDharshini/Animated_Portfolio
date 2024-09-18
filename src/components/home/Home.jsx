@@ -24,6 +24,7 @@ const textVariants = {
         }
     }
 };
+
 const sliderVarients = {
     initial: {
         x: 0
@@ -59,8 +60,9 @@ function Home() {
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
                     <motion.h2 variants={textVariants}>PRIYADHARSHINI</motion.h2>
-                    <motion.p variants={textVariants}>A Budding 👩‍💻</motion.p>
-                    <motion.h1 variants={textVariants}>Certified <br /> Full Stack Developer</motion.h1>
+
+                    <motion.h1 variants={textVariants}>Certified  Full Stack Developer</motion.h1>
+                    <motion.h2 variants={textVariants}>MERN Stack</motion.h2>
                     <motion.div variants={textVariants} className="buttons">
                         <Link to="Projects" smooth={true} duration={500} offset={-50}>
                             <motion.button variants={textVariants}>My Projects</motion.button>
@@ -69,7 +71,7 @@ function Home() {
                             <motion.button variants={textVariants}>Contact Me</motion.button>
                         </Link>
                     </motion.div>
-                    <motion.img variants={textVariants} animate='scrollButton' src="./scroll.png" alt="" />
+                    {/* <motion.img variants={textVariants} animate='scrollButton' src="./scroll.png" alt="" /> */}
                 </motion.div>
                 <motion.div className="imageContainer" variants={photoVarient} initial="initial" animate="animate">
                     <img src="./1.jpg" alt="" />

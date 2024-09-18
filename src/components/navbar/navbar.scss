@@ -2,44 +2,88 @@
 
 .navbar {
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: #111132;
 
-    .wrapper {
-        max-width: 1366px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-        @include mobile {
-            justify-content: flex-end;
-            padding: 30px;
-
-        }
+    @include mobile {
+        flex-direction: column;
+        padding-top: 20px; // Add top space in mobile view
 
     }
 
-    span {
-        font-weight: 900;
-        font-size: 20px;
-
-        @include mobile {
-            display: none;
-        }
-    }
-
-    .social {
+    .nav-list {
         display: flex;
         gap: 20px;
 
-        img {
-            width: 38px;
-            height: 38px;
+        .nav-link {
+            display: flex;
+            align-items: center;
+            background-color: rebeccapurple;
+            padding: 8px 12px; // Make background size a little smaller
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            border-left: 1px solid white;
+
+            .nav-icon {
+                font-size: 18px;
+                display: none;
+            }
+
+            .nav-text {
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+            }
+
+            &:hover {
+                background-color: darkviolet;
+            }
 
             @include mobile {
-                width: 28px;
-                height: 28px;
+                .nav-text {
+                    display: none; // Hide text labels on mobile
+                }
+
+                .nav-icon {
+                    display: block;
+                }
+
+                // Adjust padding for smaller icons
+                padding: 6px 8px;
             }
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+
+        .social {
+            display: flex;
+            gap: 20px;
+
+            img {
+                width: 38px;
+                height: 38px;
+
+                @include mobile {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+
+        @include mobile {
+            justify-content: flex-end;
+            padding: 0;
         }
     }
 }

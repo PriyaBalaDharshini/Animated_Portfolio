@@ -23,13 +23,13 @@ const item = {
 function AboutMe() {
     return (
         <div className="about">
-            <motion.img
+            {/*  <motion.img
                 src="./about.jpg"
                 alt="Profile"
                 variants={imageVariant}
                 initial="hidden"
                 animate="visible"
-            />
+            /> */}
             <div className="wrapper">
 
                 <motion.div
@@ -40,10 +40,10 @@ function AboutMe() {
                 >
                     <motion.p variants={item}>ABOUT ME</motion.p>
                     <motion.div variants={item}>
-                        I am a dedicated professional with over 5 years of experience in Technical Editing. Now, I’m excited to switch to a career in software development. I recently completed a "MERN-Full Stack Development" course, where I learned how to build and manage websites and applications using MongoDB, Express.js, React.js, and Node.js.
+                        I am a dedicated professional with over 5 years of experience in Technical Editing. Now, I’m excited to switch to a career in software development. I recently completed a <b> "MERN-Full Stack Development" </b> course, where I learned how to build and manage websites and applications using MongoDB, Express.js, React.js, and Node.js.
                     </motion.div>
                     <motion.div variants={item}>
-                        I am passionate about creating user-friendly and engaging digital experiences. With my background in technical editing and my new skills in full-stack development, I’m ready to take on roles as a Frontend Developer, Backend Developer, React Developer, or Full Stack Developer. I look forward to applying my skills and enthusiasm to new challenges and making a positive impact in the tech field.
+                        I am passionate about creating user-friendly and engaging digital experiences. With my background in technical editing and my new skills in full-stack development, I’m ready to take on roles as a <b> Frontend Developer</b>, <b> Backend Developer</b>, <b> React Developer</b>, or <b> Full Stack Developer</b>. I look forward to applying my skills and enthusiasm to new challenges and making a positive impact in the tech field.
                     </motion.div>
                     <motion.button className="button" variants={item}>
                         <a href="https://github.com/PriyaBalaDharshini/resume" target='_blank'>Resume</a>

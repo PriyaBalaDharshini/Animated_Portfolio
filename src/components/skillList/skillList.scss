@@ -1,9 +1,10 @@
 @import "../../app.scss";
 
 .skillslist {
-    background: linear-gradient(180deg, #2e225b, #0c0c1d);
+    background: linear-gradient(180deg, #111132, #0c0c1d, );
     padding: 80px;
-    height: auto;
+    height: 100vh;
+
 
     @include mobile {
         background: linear-gradient(180deg, #0c0c1d, #111132);
