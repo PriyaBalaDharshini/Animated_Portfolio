@@ -17,20 +17,8 @@ const items = [
         id: 2,
         title: "Blood Donation Application",
         image: BloodDonationImage,
-        desc: "This Blood Donation Application is developed using Tailwind CSS to create a visually appealing and user-friendly interface. The application streamlines the blood donation process, allowing users to register, schedule appointments, and track their donation history. It also includes features for managing donor information and notifications. After registering, users receive email confirmations, ensuring they stay informed about their appointments and contributions.",
+        desc: "This Blood Donation Application is developed using Tailwind CSS to create a visually appealing and user-friendly interface. Allowing users to register their details.  After registering, users receive email confirmations, ensuring they stay informed about their appointments and contributions. Credentials: admin1@gmail.com, admin123 ",
         link: "https://blood-donation-app-admin.netlify.app/"
-    },
-    {
-        id: 3,
-        title: "Project 3",
-        image: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quo cumque, nulla iste labore sit odio quis omnis, fugit inventore tempore modi corporis adipisci nobis quia veritatis. Quibusdam, voluptatem quisquam?"
-    },
-    {
-        id: 4,
-        title: "Project 4",
-        image: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quo cumque, nulla iste labore sit odio quis omnis, fugit inventore tempore modi corporis adipisci nobis quia veritatis. Quibusdam, voluptatem quisquam?"
     }
 ];
 
@@ -49,13 +37,16 @@ const Single = ({ item }) => {
         <div className='project-container'>
             <div className="container">
                 <div className="wrapper">
-                    {/* <motion.div className="imageContainer" ref={ref}>
-                        <img src={item.image} alt={item.title} />
-                    </motion.div> */}
+
                     <motion.div className="textContainer" style={{ y }}>
-                        <h2>{item.title}</h2>
-                        <p>{item.desc}</p>
-                        <button onClick={handleDemoClick}>See Demo</button>
+                        <div className='project-image'>
+                            <img onClick={handleDemoClick} src={item.image} alt={item.title} style={{ height: "300px", width: "300px", cursor: "pointer" }} />
+                        </div>
+                        <div className='project-content'>
+                            <h2>{item.title}</h2>
+                            <p>{item.desc}</p>
+                            <button onClick={handleDemoClick}>See Demo</button>
+                        </div>
                     </motion.div>
                 </div>
             </div>
