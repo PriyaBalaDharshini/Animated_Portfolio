@@ -21,11 +21,6 @@ function App() {
         <Route path="/skills" element={<SkillList />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
-
-        {/* <Route path="/about" element={<AboutMe />} />
-        <Route path="/skills" element={<SkillList />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} /> */}
       </Routes>
     </Router>
   );
