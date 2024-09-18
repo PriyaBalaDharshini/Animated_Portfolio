@@ -68,7 +68,7 @@ function AboutMe() {
                         </motion.div>
                         <motion.div className="timeline-item" variants={item}>
                             <div className="timeline-content">
-                                <p>Full Stack Development Certification, 2014</p>
+                                <p>Full Stack Development Certification, 2024</p>
                                 <p>GUVI GEEK EDTECH, Chennai</p>
                             </div>
                         </motion.div>
