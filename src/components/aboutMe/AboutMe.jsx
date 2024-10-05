@@ -46,7 +46,7 @@ function AboutMe() {
                         I am passionate about creating user-friendly and engaging digital experiences. With my background in technical editing and my new skills in full-stack development, I’m ready to take on roles as a <b> Frontend Developer</b>, <b> Backend Developer</b>, <b> React Developer</b>, or <b> Full Stack Developer</b>. I look forward to applying my skills and enthusiasm to new challenges and making a positive impact in the tech field.
                     </motion.div>
                     <motion.button className="button" variants={item}>
-                        <a href="https://github.com/PriyaBalaDharshini/resume" target='_blank'>Resume</a>
+                        <a href="https://drive.google.com/file/d/1-f40e17vK99iIRuV6nDcp0LCYEZuO-dl/view?usp=drive_link" target='_blank'>Resume</a>
                     </motion.button>
                 </motion.div>
 
